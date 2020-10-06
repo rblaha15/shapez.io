@@ -20,8 +20,8 @@ steamPage:
         - <b>20 vylepšení</b> pro mnoho hodin zábavy!
         - <b>Wires Update</b> pro zcela nové rozměry!
         - <b>Dark Mode</b>!
-        - Neomezené Savegames
-        - Neomezené značky
+        - Neomezeno uložených her!
+        - Neomezené značky!
         - Podpořte mě! ❤️
     title_future: Plánovaný kontent
     planned:
@@ -50,7 +50,7 @@ global:
     loading: Načítám
     error: Chyba
     thousandsDivider: " "
-    decimalSeparator: .
+    decimalSeparator: ,
     suffix:
         thousands: k
         millions: M
@@ -76,7 +76,7 @@ global:
         alt: ALT
         escape: ESC
         shift: SHIFT
-        space: SPACE
+        space: MEZERA
 demoBanners:
     title: Demo verze
     intro: Získejte plnou verzi pro odemknutí všech funkcí!
@@ -88,14 +88,14 @@ mainMenu:
     discordLink: Oficiální Discord Server
     helpTranslate: Pomozte přeložit hru!
     browserWarning: Hrajete v nepodporovaném prohlížeči, je možné že hra poběží
-        pomalu! Pořiďte si samostatnou verzi nebo vyzkoušejte prohlížeč Chrome
+        pomalu! Pořiďte si samostatnou verzi nebo vyzkoušejte prohlížeč Google Chrome
         pro plnohodnotný zážitek.
     savegameLevel: Úroveň <x>
     savegameLevelUnknown: Neznámá úroveň
     continue: Pokračovat
     newGame: Nová hra
     madeBy: Vytvořil <author-link>
-    subreddit: Reddit
+    subreddit: Subreddit
     savegameUnnamed: Nepojmenovaný
 dialogs:
     buttons:
@@ -174,14 +174,14 @@ dialogs:
     createMarker:
         title: Nová značka
         desc: Použijte smysluplný název, můžete také zahrnout <strong>krátký
-            klíč</strong> tvaru (který můžete vygenerovat <link>zde</link>)
+            klíč</strong> tvaru. (který můžete vygenerovat <link>zde</link>)
         titleEdit: Upravit značku
     markerDemoLimit:
-        desc: V ukázce můžete vytvořit pouze dvě značky. Získejte plnou verzi pro
+        desc: V demo verzi můžete vytvořit pouze dvě značky. Získejte plnou verzi pro
             neomezený počet značek!
     massCutConfirm:
         title: Potvrdit vyjmutí
-        desc: Chceš vyjmout spoustu budov (přesněji řečeno <count>)! Vážně to chceš
+        desc: Chystáš se vyjmout spoustu budov (přesněji řečeno <count>)! Vážně to chceš
             udělat?
     exportScreenshotWarning:
         title: Exportuj snímek obrazovky
@@ -231,7 +231,7 @@ ingame:
             speed: Rychlost
             range: Dosah
             storage: Úložný prostor
-            oneItemPerSecond: 1 tvar / sekundu
+            oneItemPerSecond: 1 tvar za sekundu
             itemsPerSecond: <x> tvarů / s
             itemsPerSecondDouble: (x2)
             tiles: <x> dílků
@@ -241,7 +241,7 @@ ingame:
         unlockText: "Odemčeno: <reward>!"
         buttonNextLevel: Další úroveň
     notifications:
-        newUpgrade: Nová aktualizace je k dispozici!
+        newUpgrade: Nové vylepšení je k dispozici!
         gameSaved: Hra byla uložena.
         freeplayLevelComplete: Level <level> byl dokončen!
     shop:
@@ -289,8 +289,8 @@ ingame:
             hour: <shapes> / h
     settingsMenu:
         playtime: Herní čas
-        buildingsPlaced: Budovy
-        beltsPlaced: Pásy
+        buildingsPlaced: Položeno budov
+        beltsPlaced: Položeno pásů
         buttons:
             continue: Pokračovat
             settings: Nastavení
@@ -330,12 +330,12 @@ ingame:
         purple: Fialová
         cyan: Tyrkysová
         white: Bílá
-        uncolored: Bez barvy
+        uncolored: Šedá
         black: Černá
     shapeViewer:
         title: Vrstvy
         empty: Prázdné
-        copyKey: Copy Key
+        copyKey: Kopírovat klíč
     connectedMiners:
         one_miner: 1 Extraktor
         n_miners: <amount> Extraktorů
@@ -345,7 +345,7 @@ ingame:
         desc: Kliknutím sem zobrazíte výhody Steam verze!
         get_on_steam: Získejte na steamu
     standaloneAdvantages:
-        title: Získejte plnou verzy!
+        title: Získejte plnou verzi!
         no_thanks: Ne, děkuji!
         points:
             levels:
@@ -370,7 +370,7 @@ ingame:
                 title: Dark Mode
                 desc: Přestanou vás bolet oči!
             support:
-                title: Podpořte mě
+                title: Podpořte mě ❤️
                 desc: Vyvíjím to ve svém volném čase!
 shopUpgrades:
     belt:
@@ -410,7 +410,7 @@ buildings:
             description: Umožňuje vézt suroviny pod budovami a pásy.
         tier2:
             name: Tunel II. úrovně
-            description: Umožňuje vézt suroviny pod budovami a pásy.
+            description: Umožňuje vézt suroviny pod budovami a pásy. 
     cutter:
         default:
             name: Pila
@@ -450,12 +450,12 @@ buildings:
             description: Obarví tvary z levých vstupů barvou z horního vstupu.
         quad:
             name: Barvič (čtyřnásobný)
-            description: Umožnuje obarvit každou čtvrtinu tvaru individuálně. Jen
-                čtvrtiny se vstupy barev s <strong>logickým signálem</strong> na vrstvě kabelů
+            description: Umožnuje obarvit každou čtvrtinu tvaru individuálně. Pouze
+                čtvrtiny se vstupy barev a <strong>logickým signálem</strong> na vrstvě kabelů
                 budou obarveny!
         mirrored:
-            name: Barvič
-            description: Obarví celý tvar v levém vstupu barvou z pravého vstupu.
+            name: Barvič (obrácený)
+            description: Obarví celý tvar v pravém vstupu barvou z pravého vstupu.
     trash:
         default:
             name: Koš
@@ -470,18 +470,18 @@ buildings:
     balancer:
         default:
             name: Vyvažovač
-            description: Multifunkční - Rozděluje vstupy do výstupy.
+            description: Multifunkční - Rozděluje vstupy do výstupů.
         merger:
             name: Spojovač (kompaktní)
             description: Spojí dva pásy do jednoho.
         merger-inverse:
-            name: Spojovač (kompaktní)
+            name: Spojovač (kompaktní, obrácený)
             description: Spojí dva pásy do jednoho.
         splitter:
             name: Rozdělovač (kompaktní)
             description: Rozdělí jeden pás na dva.
         splitter-inverse:
-            name: Rozdělovač (kompaktní)
+            name: Rozdělovač (kompaktní, obrácený)
             description: Rozdělí jeden pás na dva.
     storage:
         default:
@@ -492,6 +492,7 @@ buildings:
         default:
             name: Křížení kabelů
             description: Umožňuje křížení dvou kabelů bez jejich spojení.
+            
     constant_signal:
         default:
             name: Konstantní signál
@@ -508,20 +509,20 @@ buildings:
             description: Vysílá signál "1" pokud oba vstupy vysílají signál.
         not:
             name: NOT Gate
-            description: Vysílá signál "1" pokud oba vstupy nevysílají signál.
+            description: Vysílá signál "1" pokud vstup nevysílá signál a opačně.
         xor:
             name: XOR Gate
             description: Vysílá signál "1" pokud jeden vstup vysílá signál, ale druhý vstup
                 nevysílá signál.
         or:
             name: OR Gate
-            description: Vysílá signál "1" pokud jeden vstup vysílá signál.
+            description: Vysílá signál "1" pokud alespoň jeden vstup vysílá signál.
     transistor:
         default:
             name: Tranzistor
             description: Přeposílá spodní vstup, pokud boční vstup vysílá signál.
         mirrored:
-            name: Tranzistor
+            name: Tranzistor (obrácený)
             description: Přeposílá spodní vstup, pokud boční vstup vysílá signál.
     filter:
         default:
@@ -535,8 +536,8 @@ buildings:
     reader:
         default:
             name: Čtečka pásů
-            description: Umožňuje měřit průměrnou propustnost pásu. Výstup čte poslední
-                položku ve vrstvě kabelů.
+            description: Umožňuje měřit průměrnou propustnost pásu. Výstup ve vrstvě kabelů čte poslední
+                položku.
     analyzer:
         default:
             name: Analyzátor tvarů
@@ -563,7 +564,7 @@ buildings:
             description: Virtuálně Spojí tvary dohromady. Pokud nemohou být spojeny, pravý
                 tvar je položen na levý.
         painter:
-            name: Virtual barvič
+            name: Virtuální barvič
             description: Virtuálně obarví celý tvar v levém vstupu barvou z pravého vstupu.
     item_producer:
         default:
@@ -595,7 +596,7 @@ storyRewards:
             <strong>aditivního míchání</strong>!
     reward_stacker:
         title: Kombinátor
-        desc: Nyní můžete spojovat tvary pomocí <strong>kombinátor</strong>! Pokud to
+        desc: Nyní můžete spojovat tvary pomocí <strong>kombinátoru</strong>! Pokud to
             jde, oba tvary se <strong>slepí</strong> k sobě. Pokud ne, tvar
             vpravo se <strong>nalepí na</strong> tvar vlevo!
     reward_splitter:
@@ -624,7 +625,7 @@ storyRewards:
             dosah</strong> a také můžete nyní míchat tunely dohromady!
     reward_cutter_quad:
         title: Řezání na čtvrtiny
-        desc: Odemknuli jste variantu <strong>pily</strong> - Rozebírač vám umožňuje
+        desc: Odemknuli jste variantu <strong>pily</strong> - Tato pila vám umožňuje
             rozdělit tvary <strong> na čtvrtiny</strong> místo na poloviny!
     reward_painter_double:
         title: Dvojité barvení
@@ -639,9 +640,9 @@ storyRewards:
     reward_freeplay:
         title: Volná hra
         desc: Zvládli jste to! Odemkli jste <strong>mód volné hry</strong>! To znamená,
-            budou od teď <strong>náhodně</strong> generovány!<br><br>
-            Vzhledem k tomu, že Hub nadále potřebuje <strong>propustnost</strong>
-            , především doporučuji postavit továrnu, která automaticky
+            že tvary budou od teď <strong>náhodně</strong> generovány!<br><br>
+            Vzhledem k tomu, že Hub nadále potřebuje <strong>propustnost</strong>,
+            především doporučuji postavit továrnu, která automaticky
             doručí požadovaný tvar!<br><br> Hub vysílá požadovaný
             tvar na vrstvu kabelů, takže jediné co musíte udělat, je analyzovat tvar a
             automaticky nastavit svou továrnu dle této analýzy.
@@ -678,7 +679,7 @@ storyRewards:
             kabelů - později to bude velmi užitečné!
     reward_rotater_180:
         title: Rotor (180°)
-        desc: Právě jste odemkli 180 stupňoví <strong>rotor</strong>! - Umožňuje
+        desc: Právě jste odemkli 180ti stupňový <strong>rotor</strong>! - Umožňuje
             vám otáčet tvar o 180 stupňů!
     reward_display:
         title: Display
